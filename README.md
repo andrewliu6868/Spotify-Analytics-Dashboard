@@ -1,3 +1,6 @@
+# Spotify-Analytics-Dashboard
+React web application that leverages Spotify Web API to provide a look at their listening habits, top artists/songs, and other interesting analytics for users
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
