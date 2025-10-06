@@ -9,6 +9,7 @@ export default function SignInPage(){
     const router = useRouter();
 
     useEffect(() => {
+
         if (status === 'authenticated'){
             router.replace('./dashboard')
         }
@@ -19,8 +20,8 @@ export default function SignInPage(){
         return (<div className="p-6 text-white"> Checking session...</div>)
     }else if(status === 'unauthenticated'){
         // Logged out UI
-        return(<div>
-            <button onClick={() => signIn('spotify', { callbackUrl: '/dashboard'})}>
+        return(<div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
+            <button onClick={() => signIn('spotify', { callbackUrl: '/dashboard'})} style={{color: 'white', background: 'green', borderRadius: '12px', padding: '15px'}}>
                 Sign in with your Spotify 
             </button>
         </div>)
